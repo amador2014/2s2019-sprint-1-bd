@@ -1,32 +1,26 @@
-CREATE DATABASE T_Gufos;
 USE T_Gufos;
 
-CREATE TABLE Categorias(
-	IdCategoria INT PRIMARY KEY IDENTITY NOT NULL,
-	Nome VARCHAR(255) NOT NULL UNIQUE
-);
+INSERT INTO Usuarios (Nome, Email, Senha, Permissao)
+	VALUES  ('Rayssa','ray@gmail.com','r123456','ALUNO'),
+			('Cleyton','c.y@gmail.com','123456','ADMINISTRADOR');
 
-CREATE TABLE Eventos(
-	IdEvento INT PRIMARY KEY IDENTITY NOT NULL,
-	Titulo VARCHAR(255) NOT NULL,
-	Descricao TEXT, -- textos grandes
-	DataEvento DATETIME NOT NULL,
-	Ativo BIT NOT NULL DEFAULT(1),
-	Localizacao VARCHAR(250) NULL,
-	IdCategoria INT FOREIGN KEY REFERENCES Categorias(IdCategoria)
-);
+INSERT INTO Categorias (Nome) VALUES ('Jogos'), ('MeetUp'), ('Futebol');
 
-CREATE TABLE Usuarios(
-	IdUsuario INT PRIMARY KEY IDENTITY NOT NULL,
-	Nome VARCHAR(255) NOT NULL,
-	Email VARCHAR(255) NOT NULL UNIQUE,
-	Senha VARCHAR(255) NOT NULL,
-	Permissao VARCHAR(255) NOT NULL
-);
+INSERT INTO Eventos (Titulo, Descricao, DataEvento, Ativo, Localizacao, IdCategoria)
+	VALUES ('Campeonato de Ping-pong', 'Campeonato entre as turmas de tec. de redes e dev', GETDATE(), 1, 'Alameda Barão de Limeira, 539',1);
+	--getdate pega a data do servidor, mas de q modo, veja a documentação
 
+INSERT INTO Eventos (Titulo, Descricao, DataEvento, Localizacao, IdCategoria)
+	VALUES ('Meetup', 'BD Relacionais', '2019-08-06T18:00:00' , 'Alameda Barão de Limeira, 539',2);
 
-CREATE TABLE Presencas(
-	IdUsuario INT FOREIGN KEY REFERENCES Usuarios(IdUsuario),
-	IdEvento INT FOREIGN KEY REFERENCES Eventos(IdEvento)
-);
+INSERT INTO Eventos (Titulo, Descricao, DataEvento, Localizacao, IdCategoria)
+	VALUES ('Futebol no Terraço', 'Do Núcleo de Desenvolvimento Senai', '2019-08-06T18:00:00' , 'Alameda Barão de Limeira, 539',2);
 
+INSERT INTO Presencas (IdEvento, IdUsuario) VALUES (1,2),(1,1),(2,2);
+
+SELECT * FROM Categorias ORDER BY IdCategoria ASC;
+SELECT * FROM Usuarios;
+SELECT * FROM Eventos;
+SELECT * FROM Presencas;
+
+UPDATE Eventos SET IdCategoria = 3 WHERE IdEvento = 3;
