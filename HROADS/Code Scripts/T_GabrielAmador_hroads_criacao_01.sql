@@ -27,7 +27,7 @@ CREATE TABLE Personagem (
 	Nome VARCHAR(200) NOT NULL UNIQUE,
 	CapacidadeMaxVida INT NOT NULL,
 	CapacidadeMaxMana INT NOT NULL,
-	DataAualizacao DATE,
+	DataAtualizacao DATE,
 	DataCriacao DATE,
 	IdClasse INT FOREIGN KEY REFERENCES Classes(IdClasse)
 )
