@@ -21,7 +21,7 @@ INSERT INTO PlataformaLancamento (IdPlataforma, IdLancamento)
 VALUES (1,1),(2,1),(3,1),(1,2),(3,3),(2,3),(1,4),(3,4),(3,5),(2,5),(1,6),(3,7);
 INSERT INTO PlataformaLancamento (IdPlataforma, IdLancamento) VALUES (4,5);
 
----------- EXTRAS
+---------------------------- EXTRAS -------------------------------
 
 DELETE FROM PlataformaLancamento WHERE IdLancamento = 6;
 DELETE FROM Lancamentos WHERE IdLancamento = 6;
@@ -36,6 +36,16 @@ INSERT INTO Lancamentos (DataLancamento, Duracao, Titulo, Sinopse, IdCategoria, 
 VALUES  ('25-10-2012','01:16:04','Velozes e Furiosos: Hobbs & Shaw','...', 4, 1),
 	    ('24-08-2000','02:00:04','Toy Story 4','...', 7, 1),
 	    ('15-01-2000','03:57:00','Nada a Perder – Parte 2','...', 4, 1);
+
+UPDATE Usuarios SET FotoPerfil = 'https://abrilexame.files.wordpress.com/2018/10/capaprofile.jpg?quality=70&strip=info&resize=680,453';
+--(Todos estão com fotos iguais, o que não é proibido');
+
+INSERT INTO Lancamentos (DataLancamento, Duracao, Titulo, Sinopse, IdCategoria, IdTipoConteudo)
+VALUES  ('25-10-2012','01:16:04','Os Guardiões da Galáxia','...', 7, 1),
+	    ('24-08-2000','01:18:04','Os Guardiões da Galáxia','...', 7, 1)
+
+INSERT INTO PlataformaLancamento (IdPlataforma, IdLancamento) VALUES (3,11), (1,12);
+
 
 
 

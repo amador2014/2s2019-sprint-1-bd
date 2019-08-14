@@ -44,3 +44,8 @@ CREATE TABLE PlataformaLancamento (
 	IdPlataforma INT FOREIGN KEY REFERENCES Plataformas(IdPlataforma)
 );
 
+---------------- EXTRAS --------------------
+
+ALTER TABLE Usuarios ADD FotoPerfil VARCHAR(500);
+
+

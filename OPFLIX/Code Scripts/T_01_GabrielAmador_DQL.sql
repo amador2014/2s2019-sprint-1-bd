@@ -1,17 +1,4 @@
 USE T_Opflix;
-/*
-- Incluir uma imagem para cada usuário cadastrado;
-
-- Criar um procedimento para listar os filmes dado uma categoria em String do usuário;
-	(Listar os filmes da categoria Ação)
-- Criar um procedimento para listar a quantidades de filmes, dada uma categoria por Id;
-	(Listar os filmes da categoria 1 ou o id correspondente da sua tabela).
-- Criar uma view que traga todas as plataformas e que mostre quais os gêneros que passem na plataforma;
-	(Netflix que passa o filme Sing, que é da categoria Animação. Logo, o resultado esperado da view, será da seguinte manteira:
-	Plataforma Gênero/Categoria
-	Netflix Animação)
-
-*/
 
 ------------ JOINS --------------------
 
@@ -44,5 +31,47 @@ SELECT * FROM ListarPlataformas() ORDER BY IdPlataforma ASC;
 SELECT * FROM ListarLancamentos() ORDER BY IdLancamento ASC;
 SELECT * FROM ListarUsuarios() ORDER BY IdUsuario ASC;
 
-------------------------------------------------
+------------ PROCEDURES -----------------
+
+CREATE PROCEDURE ListarFilmePorCategoria @Categoria VARCHAR(250) 
+AS 
+SELECT * FROM Lancamentos
+JOIN Categorias 
+ON Lancamentos.IdCategoria = Categorias.IdCategoria
+WHERE Categorias.Nome = @Categoria;
+
+EXECUTE ListarFilmePorCategoria 'Ação';
+-- AEEE GARACA, QUE ORGULHO POH
+
+CREATE PROCEDURE QuantFilmesPorCategoria @IdCategoria INT AS 
+SELECT COUNT(*) AS QuantFilmes FROM Lancamentos
+WHERE @IdCategoria = Lancamentos.IdCategoria ;
+EXECUTE QuantFilmesPorCategoria 4;
+
+DROP PROCEDURE QuantFilmesPorCategoria; --(FAVOR NÃO   D R O P A R )
+
+SELECT DISTINCT IdLancamento, Titulo FROM Lancamentos;
+
+-- Criar uma view que traga todas as plataformas e que mostre quais os gêneros que passem na plataforma;
+	--(Netflix que passa o filme Sing, que é da categoria Animação. Logo, o resultado esperado da view, será da seguinte manteira:
+	--Plataforma Gênero/Categoria
+	--Netflix Animação)
+
+CREATE VIEW vw_PlataformaLancamento AS
+SELECT Plataformas.IdPlataforma, Categorias.Nome FROM PlataformaLancamento
+JOIN Plataformas ON PlataformaLancamento.IdPlataforma = Plataformas.IdPlataforma
+JOIN Lancamentos ON PlataformaLancamento.IdLancamento = Lancamentos.IdLancamento
+JOIN Categorias ON Lancamentos.IdCategoria = Categorias.IdCategoria
+WHERE PlataformaLancamento.IdPlataforma = 4;
+
+SELECT * FROM vw_PlataformaLancamento
+
+-- revisar JOIN
+
+
+
+
+
+
+
 
