@@ -1,25 +1,23 @@
-# Banco de Dados - 2TDev. de Sistemas
+# Banco de Dados - 2T Dev. de Sistemas
 
-Sprint com foco no aprendizado de banco de dados. 
+Sprint com foco em aprendizado de banco de dados. 
 
 ## Projetos
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+Esses foram os projetos passados como desafio na primeira sprint de desenvolvimento do segunto termo do curso de Desenvolvimento de Sistemas SENAI. 
 
-### Diretorios
-
-- `/Gufos`: ...
-- `/Hroads`: ...
-- `/Opflix`: ...
-- `/Ssolve`: ...
+- `/Gufos`: Gerenciador de eventos [acesse aqui](https://github.com/amadorgabriel/2s2019-sprint-1-bd/tree/master/GUFOS).
+- `/Hroads`: RPG lúdico [acesse aqui](https://github.com/amadorgabriel/2s2019-sprint-1-bd/tree/master/HROADS).
+- `/Opflix`: Controle do lançamento de filmes e séries [acesse aqui](https://github.com/amadorgabriel/2s2019-sprint-1-bd/tree/master/OPFLIX).
+- `/Ssolve`: Gerenciador de hospedagens [acesse aqui](https://github.com/amadorgabriel/2s2019-sprint-1-bd/tree/master/SSOLVE).
 
 
 ### Conhecimentos trabalhados
 
-- Modelagens de banco de dados
-- Documentação de projeto
-- Programação de bancos relacionais com SQL Server
+- Modelagens de banco de dados;
+- Documentação de projeto;
+- Programação de bancos relacionais com SQL Server.
 
 &nbsp;
 
-Obrigado aos meus professores! [Helena Strada](https://github.com/hstrada) e [Erik Vitelli](https://github.com/EVitelli) 💜 
+😊 Obrigado aos meus professores [Helena Strada](https://github.com/hstrada) e [Erik Vitelli](https://github.com/EVitelli) 💜 
