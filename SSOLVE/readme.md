@@ -1,39 +1,41 @@
-# GUFOS
-
-Recursos do banco de dados do projeto.
+# SSolve
 
 ## Sobre
 
-A plataforma Gufos disponibiliza acesso aos eventos programadaos da Escola Senai de Informática. A plataforma disponibiliza interatividade através ded categorias, filtros, lista de interesses e muito mais!
+Uma plataforma para facilitar seus serviços de hospedagem.
 
 ### Subpastas
 
 - `/scripts`: modelagens DDL, DML e DQL.
-- `/models`: modelagens de software.
-- `/docs`: documento oficial do projeeto.
+- `/models`: diagramas de entidades.
 
 ## Modelagem de Software
 
 ### Modelagem Conceitual
-You need this
+O modelo conceitual é por onde enxergamos as entidades e funcionamento do banco de dados, além da visualização macro das entidades do sistema.
 
-<p align="center">
-    <img src="https://codesandbox.io/static/img/banner.png?v=2" height="300px">
+<p>
+    <img src="https://github.com/amadorgabriel/2s2019-sprint-1-bd/blob/master/SSOLVE/models/T_Diagrama_Conceitual.png" height="300px">
 </p>
 
+&nbsp;
 
 ### Modelagem Lógica
-You need this
+O modelo lógico é o modelo que mais se aproxima do que será desenvolvido no danco de dados.
 
-<p align="center">
-    <img src="https://codesandbox.io/static/img/banner.png?v=2" height="300px">
+<p>
+    <img src="https://github.com/amadorgabriel/2s2019-sprint-1-bd/blob/master/SSOLVE/models/T_Diagrama_L%C3%B3gico.png" height="300px">
 </p>
+
+&nbsp;
 
 ### Modelagem Física
-You need this
+O modelo físico é onde percebemos como será estruturando o banco e vemos também exemplos de valores.
 
-<p align="center">
-    <img src="https://codesandbox.io/static/img/banner.png?v=2" height="300px">
+<p>
+    <img src="https://github.com/amadorgabriel/2s2019-sprint-1-bd/blob/master/SSOLVE/models/T_Diagrama_F%C3%ADsico.png" height="300px">
 </p>
+
+&nbsp;
 
 Feito com 💜 
