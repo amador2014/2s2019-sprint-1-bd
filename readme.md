@@ -6,11 +6,22 @@ Sprint com foco em aprendizado de banco de dados.
 
 Esses foram os projetos passados como desafio na primeira sprint de desenvolvimento do segunto termo do curso de Desenvolvimento de Sistemas SENAI. 
 
-- `/Gufos`: Gerenciador de eventos [acesse aqui](https://github.com/amadorgabriel/2s2019-sprint-1-bd/tree/master/GUFOS).
-- `/Hroads`: RPG lúdico [acesse aqui](https://github.com/amadorgabriel/2s2019-sprint-1-bd/tree/master/HROADS).
-- `/Opflix`: Controle do lançamento de filmes e séries [acesse aqui](https://github.com/amadorgabriel/2s2019-sprint-1-bd/tree/master/OPFLIX).
-- `/Ssolve`: Gerenciador de hospedagens [acesse aqui](https://github.com/amadorgabriel/2s2019-sprint-1-bd/tree/master/SSOLVE).
-- `/Gufos`: Gerenciador de eventos [acesse aqui](https://github.com/amadorgabriel/2s2019-sprint-1-bd/tree/master/CNH).
+- `/CNH`
+- `/DPS`
+- `/Gufos`
+- `/Hroads`
+- `/Livros`
+- `/Locadora`
+- `/Micromanu`
+- `/Moda`
+- `/Musica`
+- `/Opflix`
+- `/Optus`
+- `/PetClinic`
+- `/PSales`
+- `/Shop`
+- `/Ssolve`
+- `/Sstop`
 
 
 ### Conhecimentos trabalhados
