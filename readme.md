@@ -10,6 +10,7 @@ Esses foram os projetos passados como desafio na primeira sprint de desenvolvime
 - `/Hroads`: RPG lúdico [acesse aqui](https://github.com/amadorgabriel/2s2019-sprint-1-bd/tree/master/HROADS).
 - `/Opflix`: Controle do lançamento de filmes e séries [acesse aqui](https://github.com/amadorgabriel/2s2019-sprint-1-bd/tree/master/OPFLIX).
 - `/Ssolve`: Gerenciador de hospedagens [acesse aqui](https://github.com/amadorgabriel/2s2019-sprint-1-bd/tree/master/SSOLVE).
+- `/Gufos`: Gerenciador de eventos [acesse aqui](https://github.com/amadorgabriel/2s2019-sprint-1-bd/tree/master/CNH).
 
 
 ### Conhecimentos trabalhados
