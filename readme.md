@@ -23,7 +23,6 @@ Esses foram os projetos passados como desafio na primeira sprint de desenvolvime
 - `/Ssolve`
 - `/Sstop`
 
-
 ### Conhecimentos trabalhados
 
 - Modelagens de banco de dados;
